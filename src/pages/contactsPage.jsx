@@ -1,0 +1,86 @@
+import {  Box } from "@mui/system";
+import { Grid } from "@mui/material";
+import IconButton from '@mui/material/IconButton';
+import React from "react";
+import Section from "../components/UI/section/Section";
+
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+
+
+
+export default function ContactsPage(){
+    const pageStyles = {
+        iconStyle : {
+            height: '100px',
+            width: '80px',
+            cursor: 'pointer',
+            color:'#1C7ED6',
+            },
+        boxStyling:{
+            height:'300px',
+            width:'300px',
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center', 
+            borderRadius:'50px', 
+            boxShadow: "0px 0px 15px 5px rgba(0,0,0,0.1)",
+            '&:hover':{
+                backgroundColor:'#FFD8A8',
+        }}
+    } 
+
+    const contacts = [
+        
+            {
+                  id:1,
+                  icon:<InstagramIcon sx={pageStyles.iconStyle}/>,
+                  link:''
+                 
+              },
+            {
+                  id:2,
+                  icon:<TwitterIcon sx={pageStyles.iconStyle}/>,
+                  link:''
+                 
+              },
+            {
+                  id:3,
+                  icon:<FacebookIcon sx={pageStyles.iconStyle}/>,
+                  link:''
+                
+              },
+              {
+                id:4,
+                icon:<GitHubIcon sx={pageStyles.iconStyle}/>,
+                link:''
+              
+            },
+            {
+                id:5,
+                icon:<EmailIcon sx={pageStyles.iconStyle}/>,
+                link:'mailto:ceresoftware@gmail.com'
+              
+            },
+            ]
+
+        const ContactItems = contacts.map(item => 
+            <Box sx={pageStyles.boxStyling}>
+                <IconButton href={item.link}>
+                    {item.icon}
+                </IconButton>
+                
+            </Box>)
+
+
+    return(
+        <Section header="Contacts">
+            <Grid container gap='120px' justifyContent='center' alignItems='center'>
+                {ContactItems}
+            </Grid>
+        </Section>
+    )
+}

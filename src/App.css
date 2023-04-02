@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=League+Spartan:wght@300;400;600&family=Open+Sans:wght@300&family=Overpass:wght@400;700&family=Poppins:wght@200;400;500;600;700&family=Raleway:wght@300;400;600;700&family=Space+Grotesk:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: white;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}/*# sourceMappingURL=App.css.map */
