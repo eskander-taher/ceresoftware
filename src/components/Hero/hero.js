@@ -59,7 +59,7 @@ export default function Hero(){
                 justifyContent:'center'
             }}>
                 <img 
-                 width='100%' height='100%' src={Pic} alt=""/>
+                 width='100%' height='100%' src={Pic} alt="software services"/>
             </Box>
         </Grid>
         </Stack>

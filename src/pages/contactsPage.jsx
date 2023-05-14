@@ -7,7 +7,7 @@ import Section from "../components/UI/section/Section";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import GitHubIcon from '@mui/icons-material/GitHub';
+
 import EmailIcon from '@mui/icons-material/Email';
 
 
@@ -38,29 +38,24 @@ export default function ContactsPage(){
             {
                   id:1,
                   icon:<InstagramIcon sx={pageStyles.iconStyle}/>,
-                  link:''
+                  link:'https://www.instagram.com/ceresoftware/'
                  
               },
             {
                   id:2,
                   icon:<TwitterIcon sx={pageStyles.iconStyle}/>,
-                  link:''
+                  link:'https://twitter.com/CereSoftware'
                  
               },
             {
                   id:3,
                   icon:<FacebookIcon sx={pageStyles.iconStyle}/>,
-                  link:''
+                  link:'https://www.facebook.com/CereSoftware-119924661071564'
                 
               },
-              {
-                id:4,
-                icon:<GitHubIcon sx={pageStyles.iconStyle}/>,
-                link:''
               
-            },
             {
-                id:5,
+                id:4,
                 icon:<EmailIcon sx={pageStyles.iconStyle}/>,
                 link:'mailto:ceresoftware@gmail.com'
               

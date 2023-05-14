@@ -10,7 +10,7 @@ import {
 const BlogItem = ({ name, description, date, image }) => {
   const theme = useTheme();
   return (
-    // <Box sx={{ borderRadius: "50px", boxShadow: 2, width: 350, height: 400 }}>
+    
     <Card
       sx={{
         borderRadius: "50px",
@@ -47,7 +47,7 @@ const BlogItem = ({ name, description, date, image }) => {
         </Typography>
       </CardContent>
     </Card>
-    // </Box>
+    
   );
 };
 

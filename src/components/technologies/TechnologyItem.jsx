@@ -22,7 +22,6 @@ const TechnologyItem = ({ name, icon }) => {
         {icon(isColored)}
       </Box>
       <Typography sx={{ fontWeight: 600 }}>{name}</Typography>
-      {/* <Typography>{name}</Typography> */}
     </Box>
   );
 };

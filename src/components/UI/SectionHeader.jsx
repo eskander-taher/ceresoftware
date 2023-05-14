@@ -1,10 +1,6 @@
 import React from "react";
 import { Typography, Box, useTheme, Stack } from "@mui/material";
 
-// const SectionHeader = styled(Typography)(({theme})=>({
-//     fontSize:'48px',
-
-// }))
 
 const SectionHeader = ({ header }) => {
   const theme = useTheme();

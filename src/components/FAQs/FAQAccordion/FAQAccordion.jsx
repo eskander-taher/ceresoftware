@@ -11,33 +11,39 @@ import { useTheme } from "@mui/material";
 const items = [
   {
     id: 1,
-    summary: " Lorem ipsum dolor sit amet Lorem, ipsum dolor.",
+    summary: "What services does your company offer?",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime nesciunt quidem vero pariatur minima libero eveniet corrupti commodi totam tenetur eaque nihil, optio, vitae nemo illum perferendis porro sapiente?",
+      "Our company provides services related to the design, development, testing, deployment, and maintenance of software applications.",
   },
   {
     id: 2,
-    summary: " Lorem ipsum dolor sit amet Lorem, ipsum dolor.",
+    summary: "What is your development process?",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime nesciunt quidem vero pariatur minima libero eveniet corrupti commodi totam tenetur eaque nihil, optio, vitae nemo illum perferendis porro sapiente?",
+      "Our software development process involves requirements gathering, design, development, testing, deployment, and maintenance.",
   },
   {
     id: 3,
-    summary: " Lorem ipsum dolor sit amet Lorem, ipsum dolor.",
+    summary: "How do you ensure code quality and security?",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime nesciunt quidem vero pariatur minima libero eveniet corrupti commodi totam tenetur eaque nihil, optio, vitae nemo illum perferendis porro sapiente?",
+      "Our company ensures code quality and security through measures such as code reviews, testing, secure coding practices, automated tools, compliance with industry standards, and ongoing monitoring and maintenance. ",
   },
   {
     id: 4,
-    summary: " Lorem ipsum dolor sit amet Lorem, ipsum dolor.",
+    summary: "What is your pricing model?",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime nesciunt quidem vero pariatur minima libero eveniet corrupti commodi totam tenetur eaque nihil, optio, vitae nemo illum perferendis porro sapiente?",
+      "Our pricing model is The time and materials pricing model which is based on the actual time and materials used in the software development process.",
   },
   {
     id: 5,
-    summary: " Lorem ipsum dolor sit amet Lorem, ipsum dolor.",
+    summary: "How long do you handle software maintenance and updates?",
     details:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maxime nesciunt quidem vero pariatur minima libero eveniet corrupti commodi totam tenetur eaque nihil, optio, vitae nemo illum perferendis porro sapiente?",
+      "The duration of software maintenance and updates can vary depending on the type and complexity of the software application, as well as the client's needs and budget ",
+  },
+  {
+    id: 6,
+    summary: "How long does it take to finish the software product?",
+    details:
+      "The time it takes to finish a software product can vary widely depending on various factors, such as the complexity and scale of the project, the technologies and tools used, the availability and skill level of the development team, and the client's requirements and specifications.",
   },
 ];
 
