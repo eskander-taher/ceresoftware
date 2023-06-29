@@ -8,24 +8,26 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useTheme } from "@mui/material";
+import { withNamespaces } from 'react-i18next';
+
 const items = [
   {
     id: 1,
     summary: "What services does your company offer?",
     details:
-      "Our company provides services related to the design, development, testing, deployment, and maintenance of software applications.",
+      "Our company provides services related to the design, development, testing, deployment,maintenance and other services that are related to filed of software applications.",
   },
   {
     id: 2,
     summary: "What is your development process?",
     details:
-      "Our software development process involves requirements gathering, design, development, testing, deployment, and maintenance.",
+      "Our software development process involves requirements gathering, design, development, testing, deployment, and maintenance. it works according to a specific plan for each project",
   },
   {
     id: 3,
     summary: "How do you ensure code quality and security?",
     details:
-      "Our company ensures code quality and security through measures such as code reviews, testing, secure coding practices, automated tools, compliance with industry standards, and ongoing monitoring and maintenance. ",
+      "Our company ensures code quality and security through measures such as code reviews, testing, secure coding practices, automated tools, compliance with industry standards, and ongoing monitoring and maintenance.",
   },
   {
     id: 4,
@@ -37,7 +39,7 @@ const items = [
     id: 5,
     summary: "How long do you handle software maintenance and updates?",
     details:
-      "The duration of software maintenance and updates can vary depending on the type and complexity of the software application, as well as the client's needs and budget ",
+      "The duration of software maintenance and updates can vary depending on the type and complexity of the software application, as well as the client's needs and budget",
   },
   {
     id: 6,
@@ -48,7 +50,7 @@ const items = [
 ];
 
 
-const FAQAccordian = () => {
+const FAQAccordian = ({t}) => {
   const [expanded, setExpanded] = useState("");
   const theme = useTheme();
 
@@ -66,7 +68,10 @@ const FAQAccordian = () => {
               onChange={(event, isExpanded) =>
                 handleExpand(isExpanded, item.id)
               }
+
+              
               sx={{
+                minWidth:{md:"100%"},
                 "&.Mui-expanded": {
                   borderTop: `${theme.palette.primary.main} 5px solid`,
                 },
@@ -89,13 +94,13 @@ const FAQAccordian = () => {
                   padding: "10px",
                 }}
               >
-                {item.summary}
+                {t(item.summary)}
               </AccordionSummary>
               <AccordionDetails>
                 <Typography
                   sx={{ color: theme.palette.text.secondary, fontSize: 18 }}
                 >
-                  {item.details}
+                  {t(item.details)}
                 </Typography>
               </AccordionDetails> 
             </Accordion>
@@ -105,4 +110,4 @@ const FAQAccordian = () => {
   );
 };
 
-export default FAQAccordian;
+export default withNamespaces()(FAQAccordian);

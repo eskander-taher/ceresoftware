@@ -1,0 +1,65 @@
+
+
+
+
+
+{ 
+
+    
+   
+    "Home":"الرئيسية",
+    "Our Projects":"مشاريعنا",
+    "Contact Us":"تواصل معنا",
+    
+
+    "Hero":"الهيرو",
+    "Web And Mobile Applications":"تطبيقات الويب والجوال",
+    "Bulid Your Projects":"قم ببناء مشاريعك",
+    "start now":"ابدأ الآن",
+
+    "Services":"الخدمات",
+    "MOBILE APPLICATION":"تطبيق المحمول",
+    "We develop simple modern Android & iOS Mobile Applications":"نقوم بتطوير تطبيقات اندرويد و اي او اس  الحديثة البسيطة",
+    "WEB APPLICATION":"تطبيق الويب",
+    "We develop user-friendly Websites and Web Applications":"نقوم بتطوير مواقع الويب وتطبيقات الويب سهلة الاستخدام",
+    "DEBUGING":"الاصلاح",
+    "We fix & repair your Web and mobile Applications":"نقوم بإصلاح وإصلاح تطبيقات الويب والجوال الخاصة بك",
+
+    "WorkFlow":"سير العمل",
+    "ANALYSIS":"تحليل",
+    "We gather and analyze the requirements and specifications of the software product, identify potential risks, and document specifications and functional/non-functional requirements.":"نقوم بجمع وتحليل متطلبات ومواصفات منتج البرنامج ، وتحديد المخاطر المحتملة ، وتوثيق المواصفات والمتطلبات الوظيفية / غير الوظيفية.",
+    "DESIGN":"تصميم",
+    "We design the software architecture, and create the high-level design for the user interface. The design should meet the requirements and specifications gathered in the previous phase.":"نصمم بنية البرنامج ، وننشئ تصميمًا عالي المستوى لواجهة المستخدم. يجب أن يفي التصميم بالمتطلبات والمواصفات التي تم جمعها في المرحلة السابقة.",
+    "DEVELOPMENT":"تطوير",
+    "We develop the software product based on the design. Our developers team writes the code, and the testing team performs unit testing to ensure that the code is working correctly.":"نقوم بتطوير منتج البرنامج بناءً على التصميم. يكتب فريق المطورين لدينا الكود ، ويقوم فريق الاختبار بإجراء اختبار الوحدة للتأكد من أن الكود يعمل بشكل صحيح.",
+    "TESTING":"اختبارات",
+    "We test the software product to identify and fix any defects. The testing is being done at different levels (unit testing, integration testing, system testing, and acceptance testing).":"نقوم باختبار منتج البرنامج لتحديد وإصلاح أي عيوب. يتم إجراء الاختبار على مستويات مختلفة اختبار الوحدة ، واختبار التكامل ، واختبار النظام ، واختبار القبول .",
+    "DEPLOYMENT":"عرض",
+    "We deploy the software product to the production environment, and the users can start using it.":"ننشر منتج البرنامج في بيئة الإنتاج ، ويمكن للمستخدمين البدء في استخدامه.",
+    "MAINTENANCE":"صيانة",
+    "We maintain the software product to ensure that it continues to meet the requirements and specifications. The maintenance includes bug fixing, updating, and upgrading the software based on the changing needs of the users.":"نحافظ على منتج البرنامج لضمان استمراره في تلبية المتطلبات والمواصفات. تتضمن الصيانة إصلاح الأخطاء وتحديثها وترقيتها بناءً على الاحتياجات المتغيرة للمستخدمين.",
+
+    "Technologies":"التكنولوجيات",
+
+    "Projects":"المشاريع",
+
+    "FAQS":"",
+    "What services does your company offer?":"ما هي الخدمات التي تقدمها شركتك؟",
+    "Our company provides services related to the design, development, testing, deployment,maintenance and other services that are related to filed of software applications.":"تقدم شركتنا الخدمات المتعلقة بالتصميم والتطوير والاختبار والنشر والصيانة والخدمات الأخرى المتعلقة بمجال تطبيقات البرامج.",
+    "What is your development process?":"ما هي عملية التطوير الخاصة بك؟",
+    "Our software development process involves requirements gathering, design, development, testing, deployment, and maintenance. it works according to a specific plan for each project":"تتضمن عملية تطوير البرامج لدينا جمع المتطلبات والتصميم والتطوير والاختبار والنشر والصيانة. يعمل وفق خطة محددة لكل مشروع",
+    "How do you ensure code quality and security?":"كيف تضمن جودة الكود والأمان؟",
+    "Our company ensures code quality and security through measures such as code reviews, testing, secure coding practices, automated tools, compliance with industry standards, and ongoing monitoring and maintenance.":"تضمن شركتنا جودة الكود وأمانه من خلال إجراءات مثل مراجعات الكود ، والاختبار ، وممارسات التشفير الآمنة ، والأدوات الآلية ، والامتثال لمعايير الصناعة ، والمراقبة المستمرة والصيانة.",
+    "What is your pricing model?":"ما هو نموذج التسعير الخاص بك؟",
+    "Our pricing model is The time and materials pricing model which is based on the actual time and materials used in the software development process.":"نموذج التسعير الخاص بنا هو نموذج تسعير الوقت والمواد الذي يعتمد على الوقت الفعلي والمواد المستخدمة في عملية تطوير البرامج.",
+    "How long do you handle software maintenance and updates?":"ما هي المدة التي تستغرقها في صيانة وتحديث البرامج؟",
+    "The duration of software maintenance and updates can vary depending on the type and complexity of the software application, as well as the client's needs and budget":"يمكن أن تختلف مدة صيانة البرنامج وتحديثاته اعتمادًا على نوع وتعقيد تطبيق البرنامج ، بالإضافة إلى احتياجات العميل وميزانيته.",
+    "How long does it take to finish the software product?":"كم من الوقت يستغرق إنهاء منتج برمجي؟",
+    "The time it takes to finish a software product can vary widely depending on various factors, such as the complexity and scale of the project, the technologies and tools used, the availability and skill level of the development team, and the client's requirements and specifications.":"يمكن أن يختلف الوقت المستغرق لإنهاء منتج البرنامج بشكل كبير اعتمادًا على عوامل مختلفة ، مثل مدى تعقيد المشروع وحجمه ، والتقنيات والأدوات المستخدمة ، ومستوى التوافر والمهارة لفريق التطوير ، ومتطلبات العميل ومواصفاته.",
+
+    "About Us": " من نحن",
+    "CereSoftware is a software company that specializes in providing custom software development and IT consulting services.":"ٍ.سيرس سوفتير هي شركة برمجيات متخصصة في تقديم خدمات تطوير البرمجيات المخصصة وخدمات استشارات تكنولوجيا المعلومات.",    "The company has a team of experienced developers who are skilled in a wide range of technologies and platforms.":"تمتلك الشركة فريقًا من المطورين ذوي الخبرة الذين يتمتعون بمهارات في مجموعة واسعة من التقنيات والمنصات",
+    "CereSoftware offers a range of services including web and mobile application development, software testing and quality assurance and deployment, UI/UX design,  and enterprise software development.":"تقدم سيرس سوفتير مجموعة من الخدمات بما في ذلك تطوير تطبيقات الويب والجوال ، واختبار البرامج وضمان الجودة والنشر ، وتصميم يو اي / يو اكس",
+    "The company is committed to delivering high-quality software solutions that meet the unique needs of their clients, and prides itself on its collaborative approach to software development.":"تلتزم الشركة بتقديم حلول برمجية عالية الجودة تلبي الاحتياجات الفريدة لعملائها ، وتفخر بنهجها التعاوني في تطوير البرمجيات.",
+    "With a focus on innovation and customer satisfaction, CereSoftware has established itself as a trusted partner for businesses of all sizes.":"مع التركيز على الابتكار ورضا العملاء ، أنشأت سيرس سوفتير نفسها كشريك موثوق للشركات من جميع الأحجام"
+  }

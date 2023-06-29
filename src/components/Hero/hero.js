@@ -3,8 +3,10 @@ import { Button, Grid, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Pic from "./Pic.svg";
 import BGPic from "./bgHERO.svg";
+import { Link} from "react-router-dom";
+import { withNamespaces } from 'react-i18next';
 
-export default function Hero() {
+ function Hero({t}) {
   const styles = {
     box1: {
       background: `url('${BGPic}')`,
@@ -37,7 +39,7 @@ export default function Hero() {
     },
   };
 
-  const link = "/ConsolForm";
+  
 
   return (
     <Stack
@@ -60,7 +62,7 @@ export default function Hero() {
             pb={{ xs: "2%", sm: "5%", md: "3%", lg: "4%" }}
             color="#212529"
           >
-            Web And Mobile Applications
+            {t("Web And Mobile Applications")}
           </Typography>
           <Typography
             fontSize={{ xs: "28px", lg: "40px" }}
@@ -68,15 +70,16 @@ export default function Hero() {
             pb={{ xs: "2%", sm: "5%", md: "3%", lg: "4%" }}
             color="#495057"
           >
-            Bulid Your Projects
+            {t("Bulid Your Projects")}
           </Typography>
           <Button
-            href={
+            component={Link}
+            to={
               "https://docs.google.com/forms/d/e/1FAIpQLSc06Ia33TVW3HCjiHIu9O06PwuDJzT551UmUDLuiQPxPDSwkA/viewform?usp=sf_link"
             }
             sx={styles.btn}
           >
-            start now
+            {t("start now")}
           </Button>
         </Box>
         <Box
@@ -95,3 +98,5 @@ export default function Hero() {
     </Stack>
   );
 }
+
+export default withNamespaces()(Hero)

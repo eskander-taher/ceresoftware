@@ -12,6 +12,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ConsolForm from "./pages/consolForm";
 import AboutUs from "./pages/AboutUs";
 
+
 function App() {
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -21,12 +22,11 @@ function App() {
     }
 
   return (
-   
+    <BrowserRouter>
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header toggleMenu={toggleMenu}/>
         {isOpen? <Nav/>: null}
-        <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Abotus" element={<AboutUs/>} />
@@ -34,9 +34,9 @@ function App() {
           <Route path="/ContactsPage" element={<ContactsPage/>} />
           <Route path="/ConsolForm" element={<ConsolForm/>} />
         </Routes>
-        </BrowserRouter>
         <Footer />
     </ThemeProvider>
+    </BrowserRouter>
   );
 }
 

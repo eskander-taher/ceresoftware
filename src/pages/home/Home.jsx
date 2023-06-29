@@ -6,21 +6,23 @@ import WorkFlow from "../../components/WorkFlow/WorkFlow";
 import TechologyList from "../../components/technologies/TechologyList";
 import ProjectList from "../../components/projects/projectList/ProjectList";
 import FAQAccordian from "../../components/FAQs/FAQAccordion/FAQAccordion";
+import { withNamespaces } from 'react-i18next';
 
-const Home = () => {
+const Home = ({t}) => {
+  
   return (
     <div>
       <Hero />
-      <Section header="Services">
+      <Section header={t("Services")}>
         <Services />
       </Section>
-      <Section header="WorkFlow">
+      <Section header={t("WorkFlow")}>
         <WorkFlow />
       </Section>
-      <Section header="Technologies" container>
+      <Section header={t("Technologies")} container>
         <TechologyList />
       </Section>
-      <Section header="Projects">
+      <Section header={t("Projects")}>
         <ProjectList />
       </Section>
       <Section header="FAQS" container>
@@ -30,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default withNamespaces()(Home);

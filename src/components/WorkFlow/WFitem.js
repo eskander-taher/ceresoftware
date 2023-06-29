@@ -4,13 +4,15 @@ import React from "react";
 
 
 export default function Wfitem( props){
+    
     const Styles = {
         Box :{
             width:'400px',
-            height:'150px',
+            height:{md:'150px'},
             p:{xs:'0 15px', md:'10px'},
         }
     }
+
 
     return(
         <Box sx={Styles.Box}>

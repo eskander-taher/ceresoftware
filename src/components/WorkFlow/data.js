@@ -17,12 +17,12 @@ const Wfdata = {
       item4:{
           id:4,
           name:'TESTING',
-          text:" We test the software product to identify and fix any defects. The testing is being done at different levels <<unit testing, integration testing, system testing, and acceptance testing>>."
+          text:"We test the software product to identify and fix any defects. The testing is being done at different levels (unit testing, integration testing, system testing, and acceptance testing)."
       },
       item5:{
           id:5,
           name:'DEPLOYMENT',
-          text:" We deploy the software product to the production environment, and the users can start using it."
+          text:"We deploy the software product to the production environment, and the users can start using it."
       },
       item6:{
           id:6,

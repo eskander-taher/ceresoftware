@@ -26,8 +26,8 @@ const ServiceData = [
           id:3,
           icon:<BugReportIcon sx={iconStyle} id="icon"/>,
           name:'DEBUGING',
-          text:"We fix & repair your Web and mobile Applications  "
+          text:"We fix & repair your Web and mobile Applications"
       },
     ]
 
-  export default ServiceData;
+  export default  ServiceData;

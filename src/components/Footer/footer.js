@@ -1,15 +1,16 @@
 import React from 'react';
 
-import { Box, List, ListItem, Typography ,Stack, ListItemButton, IconButton, Container} from '@mui/material';
+import { Box, List, ListItem, Typography ,Stack,  IconButton, Container, ButtonBase} from '@mui/material';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { Link} from "react-router-dom";
+import { withNamespaces } from 'react-i18next';
 
-
-export default function Footer(){
+ function Footer({t}){
     
-    const footerItems = [{id:1 ,item:"Home", link:'/'}, {id:2, item:"About us", link:'/Abotus'}, {id:3 , item:"Our Projects", link:'/ProjectsPage'}, {id:4 ,item:"Contact Us", link:'/ContactsPage'}]
+    const footerItems = [{id:1 ,item:"Home", link:'/'}, {id:2, item:"About Us", link:'/Abotus'}, {id:3 , item:"Our Projects", link:'/ProjectsPage'}, {id:4 ,item:"Contact Us", link:'/ContactsPage'}]
 
     const currentYear = new Date().getFullYear();
 
@@ -36,6 +37,7 @@ export default function Footer(){
                 textTransform: 'uppercase',
                 fontWeight: '600',
                 color: '#fff',
+                p:'5px',
                 '&:hover':{
                 color: '#FFD8A8'} 
             }, 
@@ -51,9 +53,9 @@ export default function Footer(){
 
     const newFooterItems = footerItems.map((newFooterItem, index) => (
       <ListItem key={index} sx={footerStyles.listItem}>
-        <ListItemButton  to={newFooterItem.link} sx={footerStyles.listText}>
-          {newFooterItem.item}
-        </ListItemButton>
+        <ButtonBase component={Link} disableRipple disableFocusRipple to={newFooterItem.link} sx={footerStyles.listText}>
+          {t(newFooterItem.item)}
+        </ButtonBase>
       </ListItem>
     ));
 
@@ -96,3 +98,5 @@ export default function Footer(){
             
     )
 }
+
+export default withNamespaces()(Footer)

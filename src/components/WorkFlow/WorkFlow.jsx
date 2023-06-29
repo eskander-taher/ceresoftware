@@ -3,12 +3,15 @@ import React from "react";
 
 import WFDV from "./WFDV";
 import WFMV from "./WFMV";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function WorkFlow(){
-    let width = window.innerWidth;
+
+    const matches = useMediaQuery('(min-width:900px)');
+    
     return(
         <div>
-        {width < 900? <WFMV/>:<WFDV/>}
+        {matches? <WFDV/>:<WFMV/>}
         </div>
     )
 }
