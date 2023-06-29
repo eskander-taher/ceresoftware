@@ -9,6 +9,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useTheme } from "@mui/material";
 import { withNamespaces } from 'react-i18next';
+import i18n from '../../Trans/i18.js'
 
 const items = [
   {
@@ -67,8 +68,8 @@ const FAQAccordian = ({t}) => {
               expanded={expanded === item.id}
               onChange={(event, isExpanded) =>
                 handleExpand(isExpanded, item.id)
-              }
-
+              }  
+              
               
               sx={{
                 minWidth:{md:"100%"},
@@ -86,6 +87,10 @@ const FAQAccordian = ({t}) => {
                 id={item.id}
                 expandIcon={<ExpandMoreIcon />}
                 sx={{
+                  display: i18n.language === 'en'? '':'flex',
+                  flexDirection:i18n.language === 'en'? '':'row-reverse',
+                  justifyContent:i18n.language === 'en'? '':'space-between',
+                  alignItems:i18n.language === 'en'? '':'space-between',
                   fontSize: 20,
                   "& .Mui-expanded": {
                     color: theme.palette.primary.main,
@@ -94,10 +99,11 @@ const FAQAccordian = ({t}) => {
                   padding: "10px",
                 }}
               >
-                {t(item.summary)}
+               <Typography textAlign={i18n.language === 'en'? 'left':'right'}>{t(item.summary)}</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography
+                  textAlign={i18n.language === 'en'? 'left':'right'}
                   sx={{ color: theme.palette.text.secondary, fontSize: 18 }}
                 >
                   {t(item.details)}
