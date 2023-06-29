@@ -9,10 +9,11 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 import EmailIcon from '@mui/icons-material/Email';
+import { withNamespaces } from 'react-i18next';
 
 
 
-export default function ContactsPage(){
+function ContactsPage({t}){
     const pageStyles = {
         iconStyle : {
             height: '100px',
@@ -72,10 +73,11 @@ export default function ContactsPage(){
 
 
     return(
-        <Section header="Contacts">
+        <Section header={t("Contact Us")}>
             <Grid container gap='120px' justifyContent='center' alignItems='center'>
                 {ContactItems}
             </Grid>
         </Section>
     )
 }
+export default withNamespaces()(ContactsPage)
