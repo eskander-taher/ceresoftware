@@ -9,7 +9,6 @@ import i18n from "../components/Trans/i18";
 function AboutUs({t}){
 
    
-    document.body.dir = i18n.dir();
 
     return(
         <Section header={t("About Us")}>
