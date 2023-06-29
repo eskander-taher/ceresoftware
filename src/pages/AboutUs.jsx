@@ -7,7 +7,8 @@ import { withNamespaces } from 'react-i18next';
 
 
 function AboutUs({t}){
-    
+
+   
 
     return(
         <Section header={t("About Us")}>
