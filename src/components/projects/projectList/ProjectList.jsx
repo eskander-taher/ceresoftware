@@ -28,7 +28,7 @@ const projects = [
 
 const ProjectList = () => {
   return (
-    <Grid container justifyContent="center" alignItems="center"  spacing={{xs:8,md:15}}>
+    <Grid container justifyContent="center" alignItems="center"  spacing={{xs:8,md:5}}>
       {projects.map((project) => {
         return (
           <Grid item key={project.id}>
