@@ -91,10 +91,14 @@ const FAQAccordian = ({t}) => {
                   flexDirection:i18n.language === 'en'? '':'row-reverse',
                   justifyContent:i18n.language === 'en'? '':'space-between',
                   alignItems:i18n.language === 'en'? '':'space-between',
+                  
                   fontSize: 20,
                   "& .Mui-expanded": {
                     color: theme.palette.primary.main,
                     fontWeight: 500,
+                  },
+                  '& .css-1k8peuy-MuiTypography-root': {
+                    marginLeft:i18n.language === 'en'? '':'auto',
                   },
                   padding: "10px",
                 }}

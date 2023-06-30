@@ -65,7 +65,7 @@ function ContactsPage({t}){
 
         const ContactItems = contacts.map(item => 
             <Box sx={pageStyles.boxStyling}>
-                <IconButton href={item.link}>
+                <IconButton href={item.link} target="_blank"> 
                     {item.icon}
                 </IconButton>
                 

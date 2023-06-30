@@ -17,7 +17,7 @@ const ProjectItem = ({ name, description, image }) => {
           transform:'scale(1.03)',
         },
         borderRadius: "50px",
-        width: 600,
+        width: {xs:350, sm:600},
         height: 350,
         boxShadow: "0px 0px 15px 5px rgba(0,0,0,0.1)",
         display: "flex",
@@ -37,12 +37,10 @@ const ProjectItem = ({ name, description, image }) => {
         alt={name}
         sx={{
           '&:hover': {
-            transform:'scale(0.90)',
-            position: "absolute",
-          top: "-100px",
+            transform: 'scale(0.90) translateY(-100px)'
           },
           borderRadius: "50px",
-          width: "600px",
+          width: "100%",
           height: "350px",
           transition: 'all 0.5s ease;'
 
