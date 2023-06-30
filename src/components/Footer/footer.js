@@ -7,6 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { Link} from "react-router-dom";
 import { withNamespaces } from 'react-i18next';
+import i18n from '../Trans/i18'
 
  function Footer({t}){
     
@@ -46,8 +47,8 @@ import { withNamespaces } from 'react-i18next';
                 display:'flex', 
                 flexDirection:'column' ,  
                 justifyContent:'space-evenly', 
-                alignItems:'flex-start',
-                textAlign: 'center',
+                alignItems:i18n.language === 'en'? 'left':'right',
+                textAlign: i18n.language === 'en'? 'left':'right',
                 color:'#FFFFFF' }
     };
 
