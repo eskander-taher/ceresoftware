@@ -1,10 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Button, Grid, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Pic from "./Pic.svg";
 import BGPic from "./bgHERO.svg";
 import { Link} from "react-router-dom";
 import { withNamespaces } from 'react-i18next';
+import { motion } from "framer-motion";
+
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
  function Hero({t}) {
   const styles = {
@@ -23,7 +27,7 @@ import { withNamespaces } from 'react-i18next';
     },
     btn: {
       height: { xs: "80px", lg: "107px" },
-      maxWidth: { xs: "220px", sm: "250px", md: "300px", lg: "350px" },
+      width: { xs: "220px", sm: "250px", md: "300px", lg: "350px" },
       borderRadius: "60px",
       backgroundColor: "#1C7ED6",
       color: "white",
@@ -55,32 +59,45 @@ import { withNamespaces } from 'react-i18next';
         alignItems={{ xs: "flex-start", sm: "center", lg: "center" }}
       >
         <Box sx={styles.box1}>
-          <Typography
-            fontSize={{ xs: "36px", sm: "39px", lg: "54px", xl: "6opx" }}
-            fontWeight="700"
-            pt={{ xs: 8, lg: 12 }}
-            pb={{ xs: "2%", sm: "5%", md: "3%", lg: "4%" }}
-            color="#212529"
+          <motion.div
+            animate={{
+              x: 0,
+            }}
+            initial={{
+              x: -500,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 200,
+            }}
           >
-            {t("Web And Mobile Applications")}
-          </Typography>
-          <Typography
-            fontSize={{ xs: "28px", lg: "40px" }}
-            fontWeight="700"
-            pb={{ xs: "2%", sm: "5%", md: "3%", lg: "4%" }}
-            color="#495057"
-          >
-            {t("Bulid Your Projects")}
-          </Typography>
-          <Button
-            component={Link}
-            to={
-              "https://docs.google.com/forms/d/e/1FAIpQLSc06Ia33TVW3HCjiHIu9O06PwuDJzT551UmUDLuiQPxPDSwkA/viewform?usp=sf_link"
-            }
-            sx={styles.btn}
-          >
-            {t("start now")}
-          </Button>
+            <Typography
+              fontSize={{ xs: "36px", sm: "39px", lg: "54px", xl: "6opx" }}
+              fontWeight="700"
+              pt={{ xs: 8, lg: 12 }}
+              pb={{ xs: "2%", sm: "5%", md: "3%", lg: "4%" }}
+              color="#212529"
+            >
+              {t("Web And Mobile Applications")}
+            </Typography>
+            <Typography
+              fontSize={{ xs: "28px", lg: "40px" }}
+              fontWeight="700"
+              pb={{ xs: "2%", sm: "5%", md: "3%", lg: "4%" }}
+              color="#495057"
+            >
+              {t("Bulid Your Projects")}
+            </Typography>
+            <Button
+              component={Link}
+              to={
+                "https://docs.google.com/forms/d/e/1FAIpQLSc06Ia33TVW3HCjiHIu9O06PwuDJzT551UmUDLuiQPxPDSwkA/viewform?usp=sf_link"
+              }
+              sx={styles.btn}
+            >
+              {t("start now")}
+            </Button>
+          </motion.div>
         </Box>
         <Box
           sx={{
@@ -92,7 +109,45 @@ import { withNamespaces } from 'react-i18next';
             justifyContent: "center",
           }}
         >
-          <img width="100%" height="100%" src={Pic} alt="software services" />
+          <motion.div
+            animate={{
+              x: 0,
+            }}
+            initial={{
+              x: 500,
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 200,
+            }}
+          >
+            <img width="100%" height="100%" src={Pic} alt="software services" />
+            <Box
+              sx={{
+                width: "800px",
+                height: "800px",
+                position:"absolute",
+                top: "100px",
+                zIndex: -1
+              }}
+            >
+              <Canvas>
+                <Suspense fallback={null}>
+                  <OrbitControls enableZoom={false} />
+                  <ambientLight intensity={1} />
+                  <directionalLight position={[3, 2, 1]} />
+                  <Sphere args={[1, 100, 200]} scale={2.8}>
+                    <MeshDistortMaterial
+                      color="#1c7ed6"
+                      attach="material"
+                      distort={0.3}
+                      speed={2.5}
+                    />
+                  </Sphere>
+                </Suspense>
+              </Canvas>
+              </Box>
+          </motion.div>
         </Box>
       </Grid>
     </Stack>
