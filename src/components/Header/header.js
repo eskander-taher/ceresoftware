@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import {
   Toolbar,
   Typography,
-  IconButton,
   ButtonBase,
   Grid,
   Container,
   Button,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
 import i18n from "../Trans/i18";
 

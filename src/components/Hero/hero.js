@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+// import  { Suspense } from "react";
 import { Button, Grid, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Pic from "./Pic.svg";
@@ -7,11 +7,11 @@ import { Link} from "react-router-dom";
 import { withNamespaces } from 'react-i18next';
 import { motion } from "framer-motion";
 
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
-
+// import { Canvas } from "@react-three/fiber";
+// import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+ 
  function Hero({t}) {
-  const styles = {
+  const styles = { 
     box1: {
       background: `url('${BGPic}')`,
       backgroundPosition: "center",
@@ -43,7 +43,6 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
     },
   };
 
-  
 
   return (
     <Stack
@@ -131,7 +130,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
                 zIndex: -1
               }}
             >
-              <Canvas>
+              {/* <Canvas>
                 <Suspense fallback={null}>
                   <OrbitControls enableZoom={false} />
                   <ambientLight intensity={1} />
@@ -145,7 +144,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
                     />
                   </Sphere>
                 </Suspense>
-              </Canvas>
+              </Canvas> */}
               </Box>
           </motion.div>
         </Box>

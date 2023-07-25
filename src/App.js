@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
-import Nav from "./components/Nav/nav";
 import Home from "./pages/home/Home";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import theme from "./theme";
@@ -10,7 +9,7 @@ import ContactsPage from "./pages/contactsPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ConsolForm from "./pages/consolForm";
 import AboutUs from "./pages/AboutUs";
-
+ 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -18,13 +17,11 @@ function App() {
     setIsOpen((prevState) => !prevState);
   }
 
-  return (
+  return ( 
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Header toggleMenu={toggleMenu} />
-        {/* {isOpen ? <Nav /> : null} */}
-
+        <Header toggleMenu={toggleMenu} isOpen={isOpen} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Abotus" element={<AboutUs />} />
@@ -39,3 +36,4 @@ function App() {
 }
 
 export default App;
+ 

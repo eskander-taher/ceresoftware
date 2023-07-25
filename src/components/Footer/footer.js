@@ -74,7 +74,7 @@ function Footer({ t }) {
       <ButtonBase
         component={Link}
         disableRipple
-        disableFocusRipple
+        // disableFocusRipple
         to={newFooterItem.link}
         sx={footerStyles.listText}
       >
