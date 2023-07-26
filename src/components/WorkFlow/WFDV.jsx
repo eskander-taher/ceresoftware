@@ -33,13 +33,13 @@ function WFDV({t}){
     return(
         <Grid height='1220px' display='flex' flexDirection='row' justifyContent='center'  gap={{md:'70px',lg:'120px'}}  >
             <Stack direction='column' justifyContent='flex-start' alignItems='flex-start' gap='275px' >
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1 }} >
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
                 <Wfitem key={Wfdata.item1.id} name={t(Wfdata.item1.name)} text={t(Wfdata.item1.text)}/>
             </motion.div>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1 }} >
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
                 <Wfitem key={Wfdata.item3.id} name={t(Wfdata.item3.name)} text={t(Wfdata.item3.text)}/>
             </motion.div>
-            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1 }} >
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
                 <Wfitem key={Wfdata.item5.id} name={t(Wfdata.item5.name)} text={t(Wfdata.item5.text)}/>
             </motion.div>
             </Stack>
@@ -63,13 +63,13 @@ function WFDV({t}){
                 
             </Stack>
             <Stack direction='column' justifyContent='flex-end' alignItems='flex-end' gap='275px'>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1 }} >
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
                     <Wfitem key={Wfdata.item2.id} name={t(Wfdata.item2.name)} text={t(Wfdata.item2.text)}/>
                 </motion.div>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1 }} >
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
                     <Wfitem key={Wfdata.item4.id} name={t(Wfdata.item4.name)} text={t(Wfdata.item4.text)}/>
                 </motion.div>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 1 }} >
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
                     <Wfitem key={Wfdata.item6.id} name={t(Wfdata.item6.name)} text={t(Wfdata.item6.text)}/>
                 </motion.div>
             </Stack>
