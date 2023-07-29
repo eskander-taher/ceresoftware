@@ -85,7 +85,7 @@ function Footer({ t }) {
 
   return (
     <Stack
-      height={{ xs: "100%", lg: "500px" }}
+      height={{ xs: "100%", lg: "330px" }}
       position="static"
       sx={{
         boxSizing: "border-box",
