@@ -2,10 +2,11 @@
 import { Button, Grid, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import Pic from "./Pic.svg";
-import BGPic from "./bgHERO.svg";
+
 import { Link} from "react-router-dom";
 import { withNamespaces } from 'react-i18next';
 import { motion } from "framer-motion";
+import i18n from '../Trans/i18'
 
 // import { Canvas } from "@react-three/fiber";
 // import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
@@ -13,17 +14,13 @@ import { motion } from "framer-motion";
  function Hero({t}) {
   const styles = { 
     box1: {
-      background: `url('${BGPic}')`,
-      backgroundPosition: "center",
-      backgroundPositionX: { lg: "90px" },
-      backgroundRepeat: "no-repeat",
-      backgroundSize: { xs: "85%", sm: "100%", md: "70%", lg: "73%" },
       height: { xs: "470px", md: "70%", lg: "80%" },
       width: { xs: "410px", md: "50%", lg: "50%" },
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
       pl: { xs: "23%", sm: "13%", md: "13%", lg: "14%" },
+      pb:"10%"
     },
     btn: {
       height: { xs: "80px", lg: "107px" },
@@ -48,10 +45,11 @@ import { motion } from "framer-motion";
     <Stack
       justifyContent={{ xs: "flex-start", sm: "center", lg: "center" }}
       alignItems={{ xs: "flex-start", sm: "center", lg: "center" }}
+      width='94%'
     >
       <Grid
         container
-        maxWidth="1519px"
+        maxWidth="100%"
         mt={{ xs: 10, lg: "3%" }}
         height={{ xs: "100%", lg: "600px" }}
         justifyContent={{ xs: "flex-start", sm: "center", lg: "center" }}
@@ -76,6 +74,7 @@ import { motion } from "framer-motion";
               pt={{ xs: 8, lg: 12 }}
               pb={{ xs: "2%", sm: "5%", md: "3%", lg: "4%" }}
               color="#212529"
+              textAlign={i18n.language === 'en'? 'left':'right'}
             >
               {t("Web And Mobile Applications")}
             </Typography>
@@ -84,6 +83,7 @@ import { motion } from "framer-motion";
               fontWeight="700"
               pb={{ xs: "2%", sm: "5%", md: "3%", lg: "4%" }}
               color="#495057"
+              textAlign={i18n.language === 'en'? 'left':'right'}
             >
               {t("Bulid Your Projects")}
             </Typography>
