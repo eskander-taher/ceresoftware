@@ -36,7 +36,8 @@ function Nav({t}) {
 
   const newItems = navItems.map((newItem, index) => (
     <ListItem key={index} sx={navStyles.listItem}>
-      <ButtonBase component={Link} disableRipple  to={newItem.link} sx={navStyles.listText}> 
+      <ButtonBase component={Link} disableRipple disableFocusRipple to={newItem.link} sx={navStyles.listText}>
+        {t(newItem.item)}
       </ButtonBase>
     </ListItem>
   ));

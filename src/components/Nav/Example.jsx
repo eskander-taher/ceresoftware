@@ -37,7 +37,7 @@ export default function Example() {
       custom={height}
       ref={containerRef}
       className="nav-container"
-      style={{ width: isOpen ? "100vw" : "0" }}
+      style={{ width: isOpen ? "100vw" : "0", marginLeft: isOpen ? '0' : '5%' , marginTop: isOpen ? '0' : '1%'}}
     >
       <motion.div className="background" variants={sidebar} />
       <Navigation toggle={() => toggleOpen()} isOpen={isOpen} />

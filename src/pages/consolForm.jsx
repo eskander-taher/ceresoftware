@@ -47,7 +47,8 @@ const [details,setDetails] = useState({
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!validator.isEmpty(details.name) && !validator.isEmpty(details.direction) && validator.isMobilePhone(details.phone) && validator.isEmail(details.email) && !validator.isEmpty(details.message))  {
+    if (!validator.isEmpty(details.name) && !validator.isEmpty(details.direction) && 
+    validator.isMobilePhone(details.phone) && validator.isEmail(details.email) && !validator.isEmpty(details.message))  {
 
     let response = await fetch("http://localhost:5000/ConsolForm", {
       method: "POST",

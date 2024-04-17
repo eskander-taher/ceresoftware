@@ -4,7 +4,6 @@ import React from "react";
 import Wfitem from "./WFitem";
 import Wfdata from "./data";
 import { withNamespaces } from 'react-i18next';
-
 import {motion} from "framer-motion"
 
 function WFDV({t}){
@@ -63,15 +62,15 @@ function WFDV({t}){
                 
             </Stack>
             <Stack direction='column' justifyContent='flex-end' alignItems='flex-end' gap='275px'>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
-                    <Wfitem key={Wfdata.item2.id} name={t(Wfdata.item2.name)} text={t(Wfdata.item2.text)}/>
-                </motion.div>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
-                    <Wfitem key={Wfdata.item4.id} name={t(Wfdata.item4.name)} text={t(Wfdata.item4.text)}/>
-                </motion.div>
-                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
-                    <Wfitem key={Wfdata.item6.id} name={t(Wfdata.item6.name)} text={t(Wfdata.item6.text)}/>
-                </motion.div>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
+                <Wfitem key={Wfdata.item2.id} name={t(Wfdata.item2.name)} text={t(Wfdata.item2.text)}/>
+            </motion.div>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
+                <Wfitem key={Wfdata.item4.id} name={t(Wfdata.item4.name)} text={t(Wfdata.item4.text)}/>
+            </motion.div>
+            <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5 }} >
+                <Wfitem key={Wfdata.item6.id} name={t(Wfdata.item6.name)} text={t(Wfdata.item6.text)}/>
+            </motion.div>
             </Stack>
         </Grid>
     )

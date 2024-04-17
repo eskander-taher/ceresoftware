@@ -1,16 +1,13 @@
 import React from "react";
 import Section from "../components/UI/section/Section";
 import ProjectList from "../components/projects/projectList/ProjectList";
-import { withNamespaces } from 'react-i18next';
 
 
-function ProjectsPage({t}){
+export default function ProjectsPage(){
 
     return(
-        <Section header={t("Projects")}>
+        <Section header="Projects">
             <ProjectList/>
         </Section>
     )
 }
-
-export default withNamespaces()(ProjectsPage)

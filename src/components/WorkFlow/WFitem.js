@@ -1,6 +1,6 @@
 import { Typography, Box} from "@mui/material";
 import React from "react";
-import i18n from '../Trans/i18'
+
 
 
 export default function Wfitem( props){
@@ -16,8 +16,8 @@ export default function Wfitem( props){
 
     return(
         <Box sx={Styles.Box}>
-            <Typography variant="h3" color='#1C7ED6' textAlign={{xs:'center',md:i18n.language === 'en'? 'left':'right'}} lineHeight='38px' fontWeight='600'>{props.name}</Typography>
-            <Typography fontSize='20px' textAlign={{xs:'center',md:i18n.language === 'en'? 'left':'right'}}  fontWeight='500'>{props.text}</Typography>
+            <Typography variant="h3" color='#1C7ED6' textAlign={{xs:'center',md:'left'}} lineHeight='38px' fontWeight='600'>{props.name}</Typography>
+            <Typography fontSize='20px' textAlign={{xs:'center',md:'left'}}  fontWeight='400'>{props.text}</Typography>
         </Box>
         )      
     

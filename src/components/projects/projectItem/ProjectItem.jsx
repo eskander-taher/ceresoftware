@@ -1,59 +1,67 @@
 import {
   Card,
   CardContent,
-  CardMedia,
   Typography,
-  useTheme,
 } from "@mui/material";
 import React from "react";
 
-const ProjectItem = ({ name, description, image }) => {
-      const theme = useTheme();
+
+const ProjectItem = ({ name, description, image, color, isOpen, onToggle }) => {
+
 
   return (
-    <Card
+    <>
+    {isOpen? (<Card
       sx={{
-        '&:hover': {
-          transform:'scale(1.03)',
-        },
-        borderRadius: "50px",
-        width: {xs:350, sm:600},
-        height: 350,
+        width: 350,
+        height: 400,
+        boxShadow: "0px 0px 15px 5px rgba(0,0,0,0.1)",
+        display: "flex",
+        justifyContent: 'flex-end',
+        flexDirection: "column",
+        alignItems: "flex-end",
+        background:`url(${image})`,
+        color:'#fff'
+      }}
+
+      onClick={onToggle}
+    >
+      <CardContent sx={{ backgroundColor: color , width:'100%', height:'22%', opacity:'0.8',  }}>
+        <Typography
+          variant="h4"
+          sx={{ fontSize: 28, fontWeight: 700 , filter:"brightness(150%)"}}
+        >
+          {name}
+        </Typography>
+        <Typography
+            variant="p"
+            gutterBottom
+            sx={{ color: "#FFFFFF", opacity: 1 }}
+          >
+            {description}
+          </Typography>
+      </CardContent>
+    </Card>):(<Card
+      sx={{
+        width: 250,
+        height: 400,
         boxShadow: "0px 0px 15px 5px rgba(0,0,0,0.1)",
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        flexWrap:"wrap",
         alignItems: "center",
         position: "relative",
         overflow: "visible",
-        marginTop: "100px",
-        transition: 'all 0.5s ease;'
+        backgroundColor:'#1c7ed6',
+        color:'#fff',
+        "&:hover": {
+        backgroundColor: color,
+      },
       }}
-    >
-      <CardMedia
-        component="img"
-        image={image}
-        alt={name}
-        sx={{
-          '&:hover': {
-            transform: 'scale(0.90) translateY(-100px)'
-          },
-          borderRadius: "50px",
-          width: "100%",
-          height: "350px",
-          transition: 'all 0.5s ease;'
 
-          
-        }}
-      />
-      <CardContent 
-        sx={{ position: "absolute", 
-              zIndex: '-1', 
-              top:"245px",
-              '&:hover': {
-                // zIndex: '1',
-              },}}>
+      onClick={onToggle}
+    >
+      <CardContent sx={{ }}>
         <Typography
           variant="h4"
           sx={{ fontSize: 28, fontWeight: 700 }}
@@ -61,15 +69,10 @@ const ProjectItem = ({ name, description, image }) => {
         >
           {name}
         </Typography>
-        <Typography
-          variant="p"
-          gutterBottom
-          sx={{ color: theme.palette.text.secondary }}
-        >
-          {description}
-        </Typography>
       </CardContent>
-    </Card>
+    </Card>)}
+
+    </>
   );
 };
 

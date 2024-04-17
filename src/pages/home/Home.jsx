@@ -25,7 +25,7 @@ const Home = ({t}) => {
       <Section header={t("Projects")}>
         <ProjectList />
       </Section>
-      <Section header={t("FAQS")} container>
+      <Section header="FAQS" container>
         <FAQAccordian />
       </Section>
     </div>
