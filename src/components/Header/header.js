@@ -21,7 +21,7 @@ function Header(props){
             flexDirection: 'row',
             justifyContent:"space-between",
             backgroundColor:'#fff',
-            borderBottom: '3px solid #ffd8a8'
+            borderBottom: '3px solid #ffd8a8',
         },
          container:{
             display: 'flex',
@@ -47,18 +47,6 @@ function Header(props){
             mr: -3}
     }
 
-    const [isLang, setIsLang] = useState(false)
-    function toggleLang(){
-        setIsLang(!isLang)
-    }
-    
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-        toggleLang();
-      }
-
-      
-
 
     return(
         <Container maxWidth='xl' sx={styles.container}>
@@ -69,14 +57,9 @@ function Header(props){
                 <MenuIcon sx={{fontSize: '40px'}} />
             </IconButton>*/}
                     <Example/>
-                    {!isLang? <Button onClick={() => changeLanguage(['ar'])} edge="start" aria-label="menu" sx={styles.iconbtn}>
-                        Ar
-                    </Button>:<Button onClick={() => changeLanguage(['en'])} edge="start" aria-label="menu" sx={styles.iconbtn}>
-                        EN
-                    </Button>}
             </Box>
            
-                <ButtonBase disableRipple component={Link}  to='/'>
+                <ButtonBase  disableRipple component={Link}  to='/' sx={{mr:{xs:-2}}}>
                 <Typography sx={{filter:'brightness(97%)'}} textAlign='center' color='#ffd8a8' fontWeight='700' fontSize={{xs:'32px',md:'56px'}} letterSpacing='1px' textTransform='none'>
                         Cere</Typography>
                     <Typography textAlign='center' color='#1C7ED6' fontWeight='700' fontSize={{xs:'32px',md:'56px'}} letterSpacing='1px' textTransform='none'>

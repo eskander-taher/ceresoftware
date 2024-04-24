@@ -16,12 +16,12 @@ import './style.css'
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
-      pl: { xs: "13%", sm: "13%", md: "8%", lg: "10%" },
+      pl: { xs: "10%", sm: "13%", md: "8%", lg: "10%" },
       mt:{xs: "-13%", sm: "-13%", md: "-0%", lg: "-10%"}
     },
     btn: {
       height: { xs: "60px", md: "50px", lg: "50px" },
-      width: { xs: "150px", sm: "170px", md: "150px", lg: "170px" },
+      width: { xs: "140px", sm: "170px", md: "150px", lg: "170px" },
       borderRadius: "20px",
       backgroundColor: "#4998de",
       color: "#fff",
@@ -38,7 +38,7 @@ import './style.css'
     },
     btn2: {
       height: { xs: "60px", md: "50px", lg: "50px" },
-      width: { xs: "150px", sm: "170px", md: "150px", lg: "170px" },
+      width: { xs: "140px", sm: "170px", md: "150px", lg: "170px" },
       borderRadius: "20px",
       backgroundColor: "#ffe0b9",
       color: "#495057",

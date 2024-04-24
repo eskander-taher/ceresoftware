@@ -34,7 +34,7 @@ import Logo from  '../Header/LogoSVG.svg'
             fontSize: '30px'},
 
             listText : {
-                fontSize:{xs:'15px',md:'18px'},
+                fontSize:{xs:'13px',md:'18px'},
                 textTransform: 'uppercase',
                 fontWeight: '600',
                 color: '#fff',
